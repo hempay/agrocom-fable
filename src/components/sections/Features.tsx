@@ -91,9 +91,10 @@ const Features = () => {
         const cards = gsap.utils.toArray<HTMLElement>("[data-stack-card]");
         cards.forEach((card, i) => {
           if (i === cards.length - 1) return;
+          // Recede slightly as the next card covers this one — keep it readable
+          // until it's actually hidden (no dimming toward black).
           gsap.to(card, {
-            scale: 0.9,
-            filter: "brightness(0.6)",
+            scale: 0.94,
             transformOrigin: "center top",
             ease: "none",
             scrollTrigger: {
