@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.mybizpushorg.agrocom",
+        "paths": [
+          "/stream/*",
+          "/u/*",
+          "/p/*",
+          "NOT /_/*"
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mybizpushorg.agrocom",
+      "sha256_cert_fingerprints": [
+        "07:5B:7E:DC:56:07:89:41:D7:46:D5:F9:7C:FD:9E:CE:39:ED:5E:7A:CC:F9:E4:E7:45:B6:C6:B4:3B:96:4F:33"
+      ]
+    }
+  }
+]
+
