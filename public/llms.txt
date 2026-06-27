@@ -1,0 +1,85 @@
+# Agrocom
+
+## About
+Agrocom is a living marketplace for agriculture that connects farmers, buyers, and agribusinesses on one platform. It combines AI-powered crop advisory (BrainBag AI), direct trade with zero middlemen, live farm streaming, secure payments, and real-time community — built for African farmers and agricultural value chains.
+
+## Features
+
+### 01 — Marketplace
+List products, manage orders, and reach buyers directly — no middlemen, full margin back in your pocket. Farmers list physical and digital agricultural goods; buyers transact through secure, integrated checkout.
+
+### 02 — BrainBag AI
+Your personal agricultural advisor, available 24/7. Get crop advice, pest identification, market insights, and farm management guidance through AI. The intelligence behind better farm decisions.
+
+### 03 — Live Streaming
+Host live farm tours and product showcases. Let buyers see the harvest before they buy it — increasing trust and reducing returns.
+
+### 04 — Community
+Real-time chat with farmers, buyers, and agribusinesses across the whole agricultural value chain. Cooperatives, input suppliers, and individual growers in one connected space.
+
+### 05 — Wallet & Payments
+Secure, integrated payments powered by Hyparrow. Every transaction tracked, every naira accounted for. No third-party payment apps needed.
+
+### 06 — Agri-Tech Tools
+Weather data, crop analysis, farm journal, pest identification, and smart reminders — a toolkit built to think ahead for farmers.
+
+## Pricing
+
+### Basic — Free
+- List up to 10 products
+- 4 BrainBag AI messages per day
+- Community access
+- Basic analytics
+
+### Premium
+- Monthly: ₦1,200 | Quarterly: ₦2,850 (save 5%) | Half Year: ₦5,500 (save 8%)
+- Unlimited product listings
+- Unlimited BrainBag AI
+- Live streaming
+- Wallet & payments
+- Priority support
+- Advanced analytics
+
+### Business
+- Monthly: ₦2,500 | Quarterly: ₦7,200 (save 5%) | Half Year: ₦14,500 (save 8%)
+- Everything in Premium
+- Team accounts
+- Bulk listing tools
+- Dedicated account manager
+- Custom integrations
+- SLA support
+
+No credit card required. Cancel anytime.
+
+## Key Stats
+- 10,000+ farmers on the platform
+- 500+ products listed and traded
+- 24/7 BrainBag AI availability
+
+## Who Agrocom Is For
+- Smallholder farmers looking to sell directly to buyers
+- Commercial farmers managing large-scale operations
+- Agribusinesses needing procurement and supplier management
+- Buyers wanting verified, direct-from-farm produce
+- Agricultural cooperatives and input suppliers
+
+## Contact
+- Website: https://getagrocom.com
+- Download the app for full access
+
+## Frequently Asked Questions
+
+Q: What is Agrocom?
+A: Agrocom is an all-in-one agricultural marketplace where farmers can list products, access AI crop advice (BrainBag), livestream farm tours, make secure payments, and connect with buyers and agribusinesses — all without middlemen.
+
+Q: What is BrainBag AI?
+A: BrainBag is Agrocom's built-in AI agricultural advisor. It provides 24/7 crop advice, pest identification, market insights, and farm management guidance. Free users get 4 messages per day; Premium and Business users get unlimited access.
+
+Q: Can I use Agrocom for free?
+A: Yes. The Basic plan is free and includes up to 10 product listings, 4 BrainBag AI messages per day, community access, and basic analytics. Premium and Business plans unlock unlimited listings, live streaming, and payments.
+
+Q: How are payments handled?
+A: Payments are processed securely through Hyparrow, integrated directly into the Agrocom platform. No third-party apps needed — every transaction is tracked and receipted automatically.
+
+Q: Who built Agrocom?
+A: Agrocom was built by Vivora Farms Limited — an agri-tech company dedicated to connecting Nigerian and African farmers to markets, finance, expertise, and technology.
