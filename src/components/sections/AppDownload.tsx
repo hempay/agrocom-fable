@@ -6,29 +6,53 @@ const StoreButton = ({
   line1,
   line2,
   icon,
+  href,
 }: {
   store: string;
   line1: string;
   line2: string;
   icon: JSX.Element;
-}) => (
-  <div className="relative">
-    <span className="absolute -top-2.5 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-lime px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.2em] text-ink">
-      Coming soon
-    </span>
-    <button
-      disabled
-      aria-label={`${store} — coming soon`}
-      className="flex w-full cursor-not-allowed items-center gap-3 rounded-2xl bg-cream px-6 py-3.5 text-ink opacity-75 sm:w-auto"
-    >
+  href?: string;
+}) => {
+  const content = (
+    <>
       {icon}
       <span className="text-left">
         <span className="block text-[10px] leading-none opacity-60">{line1}</span>
         <span className="block text-base font-bold leading-tight">{line2}</span>
       </span>
-    </button>
-  </div>
-);
+    </>
+  );
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Get ${store}`}
+        className="flex w-full items-center gap-3 rounded-2xl bg-cream px-6 py-3.5 text-ink transition-transform hover:-translate-y-0.5 sm:w-auto"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className="relative">
+      <span className="absolute -top-2.5 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-lime px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.2em] text-ink">
+        Coming soon
+      </span>
+      <button
+        disabled
+        aria-label={`${store} — coming soon`}
+        className="flex w-full cursor-not-allowed items-center gap-3 rounded-2xl bg-cream px-6 py-3.5 text-ink opacity-75 sm:w-auto"
+      >
+        {content}
+      </button>
+    </div>
+  );
+};
 
 const AppDownload = () => {
   const rootRef = useRef<HTMLElement>(null);
@@ -94,6 +118,7 @@ const AppDownload = () => {
               store="Google Play"
               line1="Get it on"
               line2="Google Play"
+              href="https://play.google.com/store/apps/details?id=com.mybizpushorg.agrocom"
               icon={
                 <svg className="h-7 w-7 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M3.18 23.76c.3.17.64.22.99.14l12.86-7.42-2.82-2.82-11.03 10.1zM.5 1.48C.19 1.8 0 2.29 0 2.93v18.14c0 .64.19 1.13.5 1.45l.08.07 10.16-10.16v-.24L.58 1.4l-.08.08zM20.67 10.52l-2.89-1.67-3.17 3.17 3.17 3.17 2.91-1.68c.83-.48.83-1.26-.02-1.99zM4.17.24L17.03 7.66l-2.82 2.82L3.18.38C3.52.3 3.87.07 4.17.24z" />
