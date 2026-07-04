@@ -85,9 +85,14 @@ const Nav = () => {
 
           <div className="flex items-center gap-3">
             <Magnetic>
-              <Link to="/#download" className="btn-ink hidden px-6 py-3 sm:inline-flex">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.mybizpushorg.agrocom"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ink hidden px-6 py-3 sm:inline-flex"
+              >
                 Get the App
-              </Link>
+              </a>
             </Magnetic>
             <button
               onClick={() => setOpen((o) => !o)}
@@ -139,14 +144,16 @@ const Nav = () => {
         <div className="mt-12 overflow-hidden">
           <div data-menu-item className="flex items-center justify-between border-t border-cream/15 pt-6">
             <p className="eyebrow text-cream/40">The future of farming</p>
-            <Link
-              to="/#download"
+            <a
+              href="https://play.google.com/store/apps/details?id=com.mybizpushorg.agrocom"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="btn-lime px-6 py-3"
               tabIndex={open ? 0 : -1}
             >
               Get the App
-            </Link>
+            </a>
           </div>
         </div>
       </div>
