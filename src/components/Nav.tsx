@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { gsap } from "@/lib/gsap";
 import Magnetic from "@/components/Magnetic";
 import logo from "@/assets/agrocom-logo.png";
+import { APP_LINKS } from "@/content/apps";
 
 const LINKS = [
   { label: "Features", to: "/#features" },
@@ -86,7 +87,7 @@ const Nav = () => {
           <div className="flex items-center gap-3">
             <Magnetic>
               <a
-                href="https://play.google.com/store/apps/details?id=com.mybizpushorg.agrocom"
+                href={APP_LINKS.playStore}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ink hidden px-6 py-3 sm:inline-flex"
@@ -145,7 +146,7 @@ const Nav = () => {
           <div data-menu-item className="flex items-center justify-between border-t border-cream/15 pt-6">
             <p className="eyebrow text-cream/40">The future of farming</p>
             <a
-              href="https://play.google.com/store/apps/details?id=com.mybizpushorg.agrocom"
+              href={APP_LINKS.playStore}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}

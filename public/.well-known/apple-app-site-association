@@ -5,13 +5,14 @@
       {
         "appID": "TEAMID.com.mybizpushorg.agrocom",
         "paths": [
-          "/stream/*",
           "/u/*",
           "/p/*",
-          "NOT /_/*"
+          "/live/*",
+          "/stream/*",
+          "/communities/join",
+          "/communities/join/*"
         ]
       }
     ]
   }
 }
-
