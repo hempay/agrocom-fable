@@ -86,7 +86,7 @@ const AccountDeletion = () => {
                 "BrainBag conversation history is deleted",
                 "Transaction records are anonymized as required by law",
                 "Any remaining wallet balance must be withdrawn before deletion",
-                "Active subscriptions will be cancelled with no refund for the current period",
+                "Active App Store subscriptions must be canceled separately in Settings → Apple ID → Subscriptions",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-0.5 text-clay">—</span>

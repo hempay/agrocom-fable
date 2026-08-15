@@ -8,7 +8,7 @@ const PrivacyPolicy = () => (
         Privacy <em className="font-light text-leaf">Policy</em>
       </>
     }
-    meta="Last updated: April 1, 2026"
+    meta="Last updated: August 14, 2026"
   >
     <div className="mx-auto max-w-4xl">
       <LegalSection num="01" heading="Information We Collect">
@@ -43,7 +43,22 @@ const PrivacyPolicy = () => (
         </p>
       </LegalSection>
 
-      <LegalSection num="05" heading="Cookies & Tracking">
+      <LegalSection num="05" heading="App Store Purchases and Subscriptions">
+        <p>
+          When you purchase or restore an auto-renewable subscription on iOS, Apple processes the
+          payment. Agrocom does not receive your full payment-card details. We may receive and
+          process transaction identifiers, product identifiers, subscription status, expiration
+          dates, renewal status, and signed purchase information to verify your purchase, provide
+          subscription benefits, restore access, prevent fraud, and support your account.
+        </p>
+        <p>
+          Apple handles App Store billing and payment information under Apple&apos;s own privacy
+          policy. You can manage or cancel an Apple subscription in Settings &rarr; Apple ID
+          &rarr; Subscriptions.
+        </p>
+      </LegalSection>
+
+      <LegalSection num="06" heading="Cookies & Tracking">
         <p>
           We use cookies and similar technologies to enhance your experience, analyze usage
           patterns, and deliver relevant content. You can manage cookie preferences through your
@@ -51,7 +66,7 @@ const PrivacyPolicy = () => (
         </p>
       </LegalSection>
 
-      <LegalSection num="06" heading="Your Rights">
+      <LegalSection num="07" heading="Your Rights">
         <p>
           You have the right to access, correct, or delete your personal data. You may also request
           data portability or object to certain processing activities by contacting our support
@@ -59,14 +74,14 @@ const PrivacyPolicy = () => (
         </p>
       </LegalSection>
 
-      <LegalSection num="07" heading="Children's Privacy">
+      <LegalSection num="08" heading="Children's Privacy">
         <p>
           Agrocom is not intended for users under 18. We do not knowingly collect information from
           children.
         </p>
       </LegalSection>
 
-      <LegalSection num="08" heading="Child Safety Standards" id="child-safety-standards">
+      <LegalSection num="09" heading="Child Safety Standards" id="child-safety-standards">
         <p>
           Agrocom is committed to the safety of children on our platform and maintaining an
           environment free from child sexual abuse and exploitation (CSAE). In compliance with
@@ -113,14 +128,14 @@ const PrivacyPolicy = () => (
         </p>
       </LegalSection>
 
-      <LegalSection num="09" heading="Changes to This Policy">
+      <LegalSection num="10" heading="Changes to This Policy">
         <p>
           We may update this policy periodically. We will notify you of significant changes via
           email or in-app notification.
         </p>
       </LegalSection>
 
-      <LegalSection num="10" heading="Contact Us">
+      <LegalSection num="11" heading="Contact Us">
         <p>
           For privacy-related inquiries, contact us at{" "}
           <span className="font-semibold text-leaf">privacy@agrocom.cloud</span>.
