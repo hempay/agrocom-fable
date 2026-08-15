@@ -174,9 +174,30 @@ const Pricing = () => {
           ))}
         </div>
 
-        <p className="mt-10 text-center text-xs uppercase tracking-[0.2em] text-haze">
-          No credit card required · Cancel anytime
-        </p>
+        <div className="mx-auto mt-10 max-w-4xl space-y-3 text-center text-xs leading-relaxed text-haze">
+          <p>
+            Prices above are direct Agrocom pricing. On iOS, the exact App Store price and currency
+            are displayed in the app before purchase and may vary by storefront.
+          </p>
+          <p>
+            Premium includes unlimited BrainBag AI and premium farming tools. Business includes
+            everything in Premium plus business profile and product listing tools.
+          </p>
+          <p>
+            iOS subscriptions are available for 1 month, 3 months, or 6 months and renew
+            automatically unless canceled at least 24 hours before the current period ends. Manage
+            or cancel in Settings &rarr; Apple ID &rarr; Subscriptions.
+          </p>
+          <p>
+            <a className="font-semibold text-leaf underline" href="/privacy-policy">
+              Privacy Policy
+            </a>
+            {" · "}
+            <a className="font-semibold text-leaf underline" href="/terms-and-conditions">
+              Terms of Use (EULA)
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
