@@ -136,6 +136,9 @@ const Features = () => {
           </p>
         </div>
 
+        {/* Anchor for the Marketplace card (first in both layouts). */}
+        <div id="marketplace" aria-hidden="true" />
+
         {/* Desktop: horizontal pinned track */}
         <div
           ref={trackRef}

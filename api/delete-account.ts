@@ -1,11 +1,16 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { Resend } from "resend";
 
-const resend = new Resend("re_QXCRY3q7_CZAZieMEgks3Nb776SJNKXtS");
+// Set RESEND_API_KEY in Vercel → Settings → Environment Variables. Never commit the key.
+const resend = new Resend(process.env.RESEND_API_KEY);
 const FROM = "Agrocom <noreply@vivorafarms.com>";
 const TO = "support@agrocom.cloud";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY is not set");
+    return res.status(500).json({ error: "Email service is not configured" });
+  }
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }

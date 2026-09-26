@@ -21,8 +21,11 @@ const ScrollManager = () => {
       // Let the page mount first, then glide to the anchor.
       const id = hash.slice(1);
       const t = setTimeout(() => {
-        const el = document.getElementById(id);
+        let el = document.getElementById(id);
         if (!el) return;
+        // Inside a GSAP-pinned section the element's live position shifts with
+        // the pin, so aim at the pin spacer (the section's resting start).
+        el = el.closest<HTMLElement>(".pin-spacer") ?? el;
         if (lenis) lenis.scrollTo(el, { offset: -80 });
         else el.scrollIntoView();
       }, 120);
