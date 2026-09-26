@@ -8,7 +8,7 @@ export const APP_LINKS = {
   appStore: "https://apps.apple.com/app/id6779301070",
 } as const;
 
-export type DeepLinkKind = "profile" | "post" | "live" | "community";
+export type DeepLinkKind = "profile" | "post" | "live" | "community" | "call" | "meeting" | "referral";
 
 export const DEEP_LINK_COPY: Record<
   DeepLinkKind,
@@ -33,6 +33,21 @@ export const DEEP_LINK_COPY: Record<
     eyebrow: "Community invite",
     title: "Join this community in Agrocom",
     body: "Community invites open in the Agrocom app. Open it if you already have Agrocom, or download it to continue.",
+  },
+  call: {
+    eyebrow: "Call invitation",
+    title: "Join this call in Agrocom",
+    body: "Calls open in the Agrocom app. Open it if you already have Agrocom, or download it to continue.",
+  },
+  meeting: {
+    eyebrow: "Meeting invitation",
+    title: "Join this meeting in Agrocom",
+    body: "Meetings open in the Agrocom app. Open it if you already have Agrocom, or download it to continue.",
+  },
+  referral: {
+    eyebrow: "Agrocom invitation",
+    title: "Join Agrocom",
+    body: "Open Agrocom to use this invitation, or download the app to get started.",
   },
 };
 

@@ -21,6 +21,17 @@
       "destination": "/api/apple-app-site-association"
     },
     {
+      "source": "/p/:postId",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?i)(facebookexternalhit|facebot|whatsapp|twitterbot|linkedinbot|slackbot|discordbot|telegrambot|skypeuripreview|googlebot|bingbot)"
+        }
+      ],
+      "destination": "/api/post-preview?postId=:postId"
+    },
+    {
       "source": "/((?!\\.well-known/).*)",
       "destination": "/index.html"
     }

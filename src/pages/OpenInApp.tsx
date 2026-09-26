@@ -48,14 +48,19 @@ const OpenInApp = ({ kind }: OpenInAppProps) => {
   }, [pathname, search]);
 
   const customSchemeUrl = useMemo(
-    () => buildCustomSchemeUrl(pathname, search),
-    [pathname, search]
+    () => kind === "referral"
+      ? `agrocom:///${pathname.replace(/^\/+/, "")}${search}`
+      : buildCustomSchemeUrl(pathname, search),
+    [kind, pathname, search]
   );
 
   const detailLabel = useMemo(() => {
     if (kind === "profile" && params.userId) return params.userId;
     if (kind === "post" && params.postId) return params.postId;
     if (kind === "live" && params.joinStreamId) return params.joinStreamId;
+    if (kind === "call" && params.callCode) return params.callCode;
+    if (kind === "meeting" && params.meetingCode) return params.meetingCode;
+    if (kind === "referral") return searchParams.get("ref") ? `Referral ${searchParams.get("ref")}` : "Invitation ready";
     if (kind === "community") {
       return searchParams.get("inviteToken") ? "Invite ready" : "Community join";
     }
