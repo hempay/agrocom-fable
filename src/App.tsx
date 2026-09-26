@@ -58,7 +58,10 @@ const App = () => (
         <Route path="/p/:postId" element={<OpenInApp kind="post" />} />
         <Route path="/live/:joinStreamId" element={<OpenInApp kind="live" />} />
         <Route path="/stream/:joinStreamId" element={<OpenInApp kind="live" />} />
+        <Route path="/call/:callCode" element={<OpenInApp kind="call" />} />
+        <Route path="/meet/:meetingCode" element={<OpenInApp kind="meeting" />} />
         <Route path="/communities/join" element={<OpenInApp kind="community" />} />
+        <Route path="/join" element={<OpenInApp kind="referral" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </SmoothScroll>
