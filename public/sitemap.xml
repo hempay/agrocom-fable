@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Static sitemap for Agrocom's public marketing routes. Referenced by
+     public/robots.txt (`Sitemap: https://getagrocom.com/sitemap.xml`), so the
+     path and host must stay in sync with that declaration. The legacy short
+     paths /privacy and /terms are redirects to the canonical pages below and
+     are intentionally excluded, as are the open-in-app deep links
+     (/u/:userId, /p/:postId, /live/:joinStreamId, /stream/:joinStreamId,
+     /communities/join) — they are per-user handoff utilities, not indexable
+     content. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://getagrocom.com/</loc>
+    <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://getagrocom.com/contact</loc>
+    <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://getagrocom.com/privacy-policy</loc>
+    <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://getagrocom.com/terms-and-conditions</loc>
+    <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://getagrocom.com/account-deletion</loc>
+    <lastmod>2026-10-07</lastmod>
+  </url>
+</urlset>
