@@ -10,6 +10,7 @@ const LINKS = [
   { label: "BrainBag", to: "/#brainbag" },
   { label: "Stories", to: "/#stories" },
   { label: "Pricing", to: "/#pricing" },
+  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
 

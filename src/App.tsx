@@ -7,6 +7,8 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsAndConditions from "@/pages/TermsAndConditions";
 import AccountDeletion from "@/pages/AccountDeletion";
 import Contact from "@/pages/Contact";
+import Careers from "@/pages/Careers";
+import CareerDetail from "@/pages/CareerDetail";
 import OpenInApp from "@/pages/OpenInApp";
 import NotFound from "@/pages/NotFound";
 import { ScrollTrigger } from "@/lib/gsap";
@@ -53,6 +55,8 @@ const App = () => (
         <Route path="/terms" element={<Navigate to="/terms-and-conditions" replace />} />
         <Route path="/account-deletion" element={<AccountDeletion />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/:slug" element={<CareerDetail />} />
         {/* Share / deep links: open-in-app handoff (not 404). */}
         <Route path="/u/:userId" element={<OpenInApp kind="profile" />} />
         <Route path="/p/:postId" element={<OpenInApp kind="post" />} />

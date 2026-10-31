@@ -18,6 +18,7 @@ const COLUMNS = [
     links: [
       { label: "About", href: "/#manifesto" },
       { label: "Stories", href: "/#stories" },
+      { label: "Careers", href: "/careers" },
       { label: "Get the App", href: "/#download" },
     ],
   },
